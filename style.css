@@ -1,0 +1,288 @@
+html {
+  background-color: black;
+  color: lightgray;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.searchbar {
+  display: flex;
+  align-items: center; /* Vertically align items */
+  border-radius: 10px;
+  background-color: #052636;
+  border-color: #052636;
+  width: 700px;
+  height: 40px;
+  color: lightgray;
+  margin-left: 10px;
+  margin-top: 10px;
+  position: relative; /* Add relative positioning to contain the button */
+  overflow: hidden; /* Clip the content that overflows */
+}
+
+.searchbar input {
+  flex-grow: 1; /* Allow the input to grow and take available space */
+  border: none;
+  outline: none; /* Remove input outline */
+  background: transparent; /* Make the input transparent */
+  color: lightgray;
+  width: 100%; /* Ensure the input takes the full width of the container */
+}
+
+.searchbar button {
+  background-color: rgba(32, 32, 184, 0%);
+  border: none;
+  border-radius: 15px;
+  height: 30px;
+  width: 70px;
+  color: white;
+  margin-left: 5px; /* Add some spacing between the input and button */
+}
+
+.currentforecast {
+  display: flex;
+  color: lightgray;
+  margin-bottom: 20px; /* Add margin-bottom to create a gap */
+  margin-left: 30px;
+  margin-right: auto;
+  margin-top: 15px;
+}
+
+.todaysforecast {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+  height: 300px;
+  border-radius: 15px;
+  background-color: #052636;
+  color: lightgray;
+  margin-left: 10px;
+  margin-right: auto;
+  margin-top: auto;
+  align-self: center; /* Center vertically */
+}
+
+button {
+  color: white;
+  background-color: rgb(32, 32, 184);
+  border: none;
+  border-radius: 15px;
+  height: 30px;
+  width: 70px;
+}
+
+.sevendayforecast {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  height: 850px;
+  border-radius: 15px;
+  background-color: #052636;
+  color: lightgray;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: auto;
+}
+
+.hourly-forecast {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: lightgray;
+  border-right: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.hourly-forecast .time {
+  font-size: 18px;
+}
+
+.hourly-forecast img {
+  width: 90px;
+  height: 90px;
+}
+
+.hourly-forecast .temperature {
+  font-size: 18px;
+}
+
+.day-forecast {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: lightgray;
+  gap: 10px;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.day-forecast .day {
+  font-size: 18px;
+}
+
+.day-forecast img {
+  width: 90px;
+  height: 90px;
+}
+
+.day-forecast .condition {
+  font-size: 14px;
+}
+
+.day-forecast .temp {
+  font-size: 16px;
+}
+
+.airconditions {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  height: 300px;
+  border-radius: 15px;
+  background-color: #052636;
+  color: lightgray;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: auto;
+  margin-top: auto;
+  text-align: center;
+}
+
+/* Style the headings (Real Feel, Chance of Rain) */
+.airconditions .column p {
+  font-size: 22px;
+  margin: 0;
+  
+}
+
+/* Style the values (temperature, percentage, wind, uvindex) */
+.airconditions .column span {
+  font-size: 40px;
+  color: whitesmoke;
+  margin: 5px 0;
+  font-weight: 500;
+}
+
+.airconditions .button-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.button-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.see-more-button {
+  color: white;
+  background-color: rgb(32, 32, 184);
+  border: none;
+  border-radius: 15px;
+  height: 40px;
+  width: 80px;
+}
+
+.airconditions h3 {
+  font-size: 18px;
+  margin: 10px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.airconditions .column {
+  margin: 70px;
+}
+
+.airconditions .column p i {
+  margin-right: 5px; /* Adjust this value to control the gap */
+}
+
+.icon-text {
+  margin-left: 5px; /* Adjust this value to control the gap */
+}
+
+.airconditions .column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.column.right-column {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.column.right-column img {
+  width: 200px;
+  height: 200px;
+}
+
+.cityname {
+  font-size: 36px;
+}
+
+.temperature {
+  font-size: 50px;
+}
+
+.rain-info {
+  align-items: center;
+  color: lightgray;
+}
+
+.rain-info p {
+  font-size: 18px;
+  margin: 0;
+}
+
+.rain-chance {
+  font-size: 20px;
+  color:lightgray;
+}
+
+.currentforecast .column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.currentforecast .gap {
+  flex-grow: 1;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  overflow: hidden;
+}
